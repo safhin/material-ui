@@ -29,7 +29,7 @@ export function TabPanel(props) {
       {...other}
     >
       {value === index && (
-        <Box sx={{ p: 3 }}>
+        <Box sx={{ pt: 2  }}>
           <Typography>{children}</Typography>
         </Box>
       )}
@@ -56,7 +56,7 @@ const Input = styled('input')({
 const linkStyles = makeStyles({
   style: {
     textDecoration: 'none !important',
-    color: '#000 !important',
+    color: 'rgb(11, 118, 192) !important',
     fontSize: '17px',
     display: 'block'
   }
@@ -64,7 +64,7 @@ const linkStyles = makeStyles({
 
 const sidearHeader = makeStyles({
   root: {
-    color: '#000',
+    color: 'rgb(31, 34, 120)',
     fontSize: '18px'
   },
 });
@@ -161,6 +161,7 @@ export default function MediaUpload() {
                 <Card sx={{
                   width: '100%',
                   height: '100%',
+                  backgroundColor: '#f6f7f9'
                 }} variant="outlined">
                   <CardContent xs={{ height: '100%' }}>
                     <h5 className={sidebarHeaderClass.root}>Insert Media</h5>
@@ -258,7 +259,7 @@ export default function MediaUpload() {
                   ))}
                 </ImageList>
               </Grid>
-              <Grid item xs={4} md={4} p={2} sx={{ backgroundColor: '#ccc' }}>
+              <Grid item xs={4} md={4} p={2} sx={{ backgroundColor: '#f6f7f9' }}>
                 <Card sx={{ minWidth: 275, borderLeft: 3, borderColor: 'error.main' }}>
                   <CardContent>
                     <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
@@ -278,7 +279,7 @@ export default function MediaUpload() {
                 <Card sx={{ mt: '30px' }}>
                   <CardContent>
                     <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-                      uploading
+                      Attachment Details
                     </Typography>
                     <Typography sx={{ mb: 1.5 }} color="text.secondary">
                       capture.jpg
